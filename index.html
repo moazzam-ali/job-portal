@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsome470.css">
+    <link rel="stylesheet" href="assets/css/fontawsome.css">
+
+    <link rel="stylesheet" href="assets/css/4_5_2_bootstrap.css">
+    <script src="assets/js/3_5_1_jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/4_5_2_bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/441bootstrap.css">
+    <script src="assets/js/341slimmin.js"></script>
+    <script src="assets/js/116popper.min.js"></script>
+    <script src="assets/js/441bootstrap.js"></script>
+    <script src="assets/js/211jquery.js"></script>
+    <script src="assets/js/select402.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" <link rel="stylesheet"
+        href="jQuery.UI.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white;
+                        background: blue;
+                        position: relative;
+                        left: 32px;
+                        bottom: 12px;
+                        /* height: 10px;">&times;</span>
+                    </button>
+                    <div class="wrapper">
+
+                        <form class="form-wrapper">
+                            <fieldset class="section is-active">
+                                <h5 class="font-weight-bold mb-4">Login for job post</h5>
+                                <label for="name" style="float: left;">Email Address</label>
+                                <input class="form-control" type="email" name="name" placeholder="Name"> <br>
+                                <label for="name" style="float: left;">Password</label>
+                                <input class="form-control" type="password" name="password" placeholder="******">
+
+                                <button id="log-reg" type="button">Login Now</button>
+                                <button id="log-reg" type="button" class="button">Registeration Now</button>
+                                <p>or</p>
+
+                                <button style="width: 100%;" type="button"
+                                    class="btn btn-outline-danger fa fa-google">Signup Via Gmail account</button>
+
+                                <!-- <div>Next</div> -->
+
+                            </fieldset>
+
+
+                            <fieldset class="section">
+                                <h5 class="mb-5">Create a Acount for job post</h5>
+                                <input class="form-control" type="name" name="name" style="
+                                margin-bottom: 10px;
+                            " placeholder="Name">
+                                <input class="form-control" type="email" class="mt-2" name="email" placeholder="Email">
+                                <input class="form-control" type="text" name="organization" placeholder="Organization">
+                                <select class="form-control" name="city" id="city">
+                                    <option value="0">City</option>
+
+                                    <option value="karachi">karachi</option>
+                                    <option value="lahore">lahore</option>
+                                    <option value="islamabad">islamabad</option>
+                                    <option value="sukkur">sukkur</option>
+                                </select>
+                                <button id="log-reg" type="button">Registeration Now</button>
+                                <button id="log-reg" type="button" class="button">Login Now</button>
+
+                                <!-- <input class="submit button" type="submit" value="Sign Up"> -->
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+
+
+
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand font-weight-bold" href="#" style="
+    font-size: 21pt;font-style: italic;color: #1967d3;
+  ">SORRTED</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="who_are_we.html">Who Are We</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="what_we_do.html">What We Offer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Recruiter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-dark" href="assets/job-seeker/backup/dist/job-seeker.html">Job
+                            Seeker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">What Vacancy Portal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="pdf/broucher.pdf" style="font-size: 11pt; color: #1967d3;font-family: revert;"
+                        class="fa fa-file-pdf-o mt-2 font-weight-bold" data-toggle="modal"
+                        data-target="#exampleModal">Register Yourself
+                        today</a>
+                </span>
+                <span>
+                    <button type="button" class="ml-2 mr-2" id="login-button">Login/Register</button>
+                </span>
+
+
+                <span class="navbar-text">
+                    <button type="button" class="pl-4 pr-4" id="login-button" style="  background-image: linear-gradient(#06038c, #05035c);
+            ;color: white;">+ Post Job</button>
+                </span>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <br>
+    <br>
+    <main>
+
+        <section id="searcharea">
+            <div class="container" id="searching-area">
+                <div class="row">
+
+
+                    <div class="col-md-4 search-bar">
+                        <i class="fa fa-search" style="font-size:24px; color: grey;margin-right: 10px;"></i>
+                        <input type="text" placeholder="job title, keywords" style="font-weight: 600;">
+                    </div>
+
+
+
+
+                    <div class="col-md-3 dropdown d-flex">
+                        <i class="fa fa-map-marker" style="font-size:24px; color: grey;margin-top: 18px;"></i>
+                        <div class="form-group" style="
+                        margin-top: 17px;
+                        margin-left: 10px;
+                    ">
+                            <select class="form-control select2" id="sel1" placeholder="City" style="font-weight: 600;">
+                                <option value="0">City</option>
+                                <option value="Karachi">Karachi</option>
+                                <option value="Lahore">Lahore</option>
+                                <option value="Sialkot">Sialkot</option>
+                                <option value="Faisalabad">Faisalabad</option>
+                                <option value="Rawalpindi"></option>
+                                <option value="">Rawalpindi</option>
+                                <option value="Peshawar">Peshawar</option>
+                                <option value="Saidu Sharif">Saidu Sharif</option>
+                                <option value="Multan">Multan</option>
+                                <option value="Gujranwala">Gujranwala</option>
+                                <option value="Islamabad">Islamabad</option>
+                                <option value="Quetta">Quetta</option>
+                                <option value="Bahawalpur">Bahawalpur</option>
+                                <option value="Sargodha">Sargodha</option>
+                                <option value="New Mirpur">New Mirpur</option>
+                                <option value="Chiniot">Chiniot</option>
+                                <option value="Sukkur">Sukkur</option>
+                                <option value="Larkana">Larkana</option>
+                                <option value="Shekhupura">Shekhupura</option>
+                                <option value="Jhang City">Jhang City</option>
+                                <option value="Rahimyar Khan">Rahimyar Khan</option>
+                                <option value="Gujrat">Gujrat</option>
+                                <option value="Kasur">Kasur</option>
+                                <option value="Mardan">Mardan</option>
+                                <option value="Mingaora">Mingaora</option>
+                                <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                                <option value="Nawabshah">Nawabshah</option>
+                                <option value="Sahiwal">Sahiwal</option>
+                                <option value="Mirpur Khas">Mirpur Khas</option>
+                                <option value="Okara">Okara</option>
+                                <option value="Mandi Burewala">Mandi Burewala</option>
+                                <option value="Jacobabad">Jacobabad</option>
+                                <option value="Saddiqabad">Saddiqabad</option>
+                                <option value="Kohat">Kohat</option>
+                                <option value="Muridke">Muridke</option>
+                                <option value="Muzaffargarh">Muzaffargarh</option>
+                                <option value="Khanpur">Khanpur</option>
+                                <option value="Gojra">Gojra</option>
+                                <option value="Mandi Bahauddin">Mandi Bahauddin</option>
+                                <option value="Abbottabad">Abbottabad</option>
+                                <option value="Dadu">Dadu</option>
+                                <option value="Khuzdar">Khuzdar</option>
+                                <option value="Pakpattan">Pakpattan</option>
+                                <option value="Tando Allahyar">Tando Allahyar</option>
+                                <option value="Vihari">Vihari</option>
+                                <option value="Jaranwala">Jaranwala</option>
+                                <option value="Kamalia">Kamalia</option>
+                                <option value="Kot Addu">Kot Addu</option>
+                                <option value="Nowshera">Nowshera</option>
+                                <option value="Swabi">Swabi</option>
+                                <option value="Dera Ismail Khan">Dera Ismail Khan</option>
+                                <option value="Chaman">Chaman</option>
+                                <option value="Charsadda">Charsadda</option>
+                                <option value="Kandhkot">Kandhkot</option>
+                                <option value="Hasilpur">Hasilpur</option>
+                                <option value="Muzaffarabad">Muzaffarabad</option>
+                                <option value="Mianwali">Mianwali</option>
+                                <option value="Jalalpur Jattan">Jalalpur Jattan</option>
+                                <option value="Bhakkar">Bhakkar</option>
+                                <option value="Zhob">Zhob</option>
+                                <option value="Kharian">Kharian</option>
+                                <option value="Mian Channun">Mian Channun</option>
+                                <option value="Jamshoro">Jamshoro</option>
+                                <option value="Pattoki">Pattoki</option>
+                                <option value="Harunabad">Harunabad</option>
+                                <option value="Toba Tek Singh">Toba Tek Singh</option>
+                                <option value="Shakargarh">Shakargarh</option>
+                                <option value="Hujra Shah Muqim">Hujra Shah Muqim</option>
+                                <option value="Kabirwala">Kabirwala</option>
+                                <option value="Mansehra">Mansehra</option>
+                                <option value="Lala Musa">Lala Musa</option>
+
+                                <option value="Nankana Sahib">Nankana Sahib</option>
+                                <option value="Bannu">Bannu</option>
+                                <option value="Timargara">Timargara</option>
+                                <option value="Parachinar">Parachinar</option>
+                                <option value="Gwadar">Gwadar</option>
+                                <option value="Abdul Hakim">Abdul Hakim</option>
+                                <option value="Hassan Abdal">Hassan Abdal</option>
+                                <option value="Tank">Tank</option>
+                                <option value="Hangu">Hangu</option>
+                                <option value="Risalpur Cantonment">Risalpur Cantonment</option>
+                                <option value="Karak">Karak</option>
+                                <option value="Kundian">Kundian</option>
+                                <option value="Umarkot">Umarkot</option>
+                                <option value="Chitral">Chitral</option>
+                                <option value="Dainyor">Dainyor</option>
+                                <option value="Kulachi">Kulachi</option>
+                                <option value="Kotli">Kotli</option>
+                                <option value="Gilgit">Gilgit</option>
+                                <option value="Hyderabad City">Hyderabad City</option>
+                                <option value="Narowal">Narowal</option>
+                                <option value="Khairpur Mir’s">Khairpur Mir’s</option>
+                                <option value="Khanewal">Khanewal</option>
+                                <option value="Jhelum">Jhelum</option>
+                                <option value="Haripur">Haripur</option>
+                                <option value="Shikarpur">Shikarpur</option>
+                                <option value="Rawala Kot">Rawala Kot</option>
+                                <option value="Hafizabad">Hafizabad</option>
+                                <option value="Lodhran">Lodhran</option>
+                                <option value="Malakand">Malakand</option>
+                                <option value="Attock City">Attock City</option>
+                                <option value="Batgram">Batgram</option>
+                                <option value="Matiari">Matiari</option>
+                                <option value="Ghotki">Ghotki</option>
+                                <option value="Naushahro Firoz">Naushahro Firoz</option>
+                                <option value="Alpurai">Alpurai</option>
+                                <option value="Bagh">Bagh</option>
+                                <option value="Daggar">Daggar</option>
+                                <option value="Bahawalnagar">Bahawalnagar</option>
+                                <option value="Leiah">Leiah</option>
+                                <option value="Tando Muhammad Khan">Tando Muhammad Khan</option>
+                                <option value="Chakwal">Chakwal</option>
+                                <option value="Khushab">Khushab</option>
+                                <option value="Badin">Badin</option>
+                                <option value="Lakki">Lakki</option>
+                                <option value="Rajanpur">Rajanpur</option>
+                                <option value="Dera Allahyar">Dera Allahyar</option>
+                                <option value="Shahdad Kot">Shahdad Kot</option>
+                                <option value="Pishin">Pishin</option>
+                                <option value="Sanghar">Sanghar</option>
+                                <option value="Upper Dir">Upper Dir</option>
+                                <option value="Thatta">Thatta</option>
+                                <option value="Dera Murad Jamali">Dera Murad Jamali</option>
+                                <option value="Kohlu">Kohlu</option>
+                                <option value="Mastung">Mastung</option>
+                                <option value="Dasu">Dasu</option>
+                                <option value="Athmuqam">Athmuqam</option>
+                                <option value="Loralai">Loralai</option>
+                                <option value="Barkhan">Barkhan</option>
+                                <option value="Musa Khel Bazar">Musa Khel Bazar</option>
+                                <option value="Ziarat">Ziarat</option>
+                                <option value="Gandava">Gandava</option>
+                                <option value="Sibi">Sibi</option>
+                                <option value="Dera Bugti">Dera Bugti</option>
+                                <option value="Eidgah">Eidgah</option>
+                                <option value="Turbat">Turbat</option>
+                                <option value="Uthal">Uthal</option>
+                                <option value="Khuzdar">Khuzdar</option>
+                                <option value="Chilas">Chilas</option>
+                                <option value="Kalat">Kalat</option>
+                                <option value="Panjgur">Panjgur</option>
+                                <option value="Gakuch">Gakuch</option>
+                                <option value="Qila Saifullah">Qila Saifullah</option>
+                                <option value="Kharan">Kharan</option>
+                                <option value="Aliabad">Aliabad</option>
+                                <option value="Awaran">Awaran</option>
+
+                                <option value="Dalbandin">Dalbandin</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 dropdown d-flex">
+                        <i class="fa fa-shopping-bag" style="font-size:24px; color: grey;margin-top: 18px;"></i>
+                        <div class="form-group" style="
+                        margin-top: 17px;
+                        margin-left: 10px;
+                    ">
+                            <select class="form-control" id="sel1" style="font-weight: 600;">
+                                <option>All Categories</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button type="button" class="find-job-btn">Find Job</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- for left column -->
+                    <div class="col-md-2" style="background: rgb(247, 249, 253);">
+                        <p class="heading-of-btns">Job type</p>
+
+                        <div class="d-flex roundy ">
+
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="text-muted types" id="forfont"> Freelance</p>
+                        </div>
+
+                        <div class="d-flex roundy">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="text-muted types" id="forfont"> Full Time</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <label class="switch roundy">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="text-muted types" id="forfont"> Internship</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <label class="switch roundy">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="text-muted types" id="forfont"> Part Time</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <label class="switch roundy">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="text-muted types" id="forfont"> Temporary</p>
+                        </div>
+
+
+
+                        <p class="heading-of-btns">Date posted</p>
+
+                        <input type="radio" class="roundy" id="age1" name="Last_Hour" value="Last_Hour">
+
+                        <label for="age1" class=" text-muted" id="forfont">Last Hour</label><br>
+                        <input type="radio" class="roundy" id="age2" name="Last_24_Hours" value="Last_24_Hours">
+                        <label for="age2" class=" text-muted" id="forfont">Last 24 Hours</label><br>
+                        <input type="radio" id="age3" class="roundy" name="Last_7_Days" value="Last_7_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Last 7 Days</label><br>
+                        <input type="radio" id="age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Last 14 Days</label><br>
+                        <input type="radio" id="age3" name="Last_30_Days" class="roundy" value="Last_30_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Last 30 Days</label><br>
+                        <input type="radio" id="age3" name="All" class="roundy" value="All">
+                        <label for="age3" class=" text-muted" id="forfont">All</label><br><br>
+
+
+
+
+                        <p class="heading-of-btns">Experience level</p>
+
+                        <input type="checkbox" class="roundy" id="age1" name="Last_Hour" value="Last_Hour">
+                        <label for="age1" class=" text-muted" id="forfont">All</label><br>
+                        <input type="checkbox" class="roundy" id="age1" name="Last_Hour" value="Last_Hour">
+                        <label for="age1" class=" text-muted" id="forfont">Entry level</label><br>
+
+                        <input type="checkbox" class="roundy" id="age2" name="Last_24_Hours" value="Last_24_Hours">
+                        <label for="age2" class=" text-muted" id="forfont">Internship2</label><br>
+                        <input type="checkbox" id="age3" class="roundy" name="Last_7_Days" value="Last_7_Days">
+                        <label type="checkbox" class=" text-muted" id="forfont">Associate2</label><br>
+                        <input type="checkbox" id=" age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Mid-Senior level4</label><br>
+
+
+
+                        <p class="heading-of-btns">Salary</p>
+
+
+                        <!-- <div class="selector">
+                            <div class="price-slider">
+                                <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                    <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                </div>
+                                <span id="min-price" data-currency="€" class="slider-price">0</span> <span class="seperator">-</span> <span id="max-price" data-currency="€" data-max="3500"  class="slider-price">3500 +</span>
+                            </div> 
+                        </div>  -->
+
+
+
+                        <p class="heading-of-btns">Company</p>
+                        <input type="checkbox" id=" age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Company 1 </label><br> <input type="checkbox"
+                            id=" age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Company 2 </label><br>
+
+
+
+
+
+                        <p class="heading-of-btns">Industry</p>
+                        <input type="checkbox" id=" age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Industry 1 </label><br> <input
+                            type="checkbox" id=" age3" class="roundy" name="Last_14_Days" value="Last_14_Days">
+                        <label for="age3" class=" text-muted" id="forfont">Industry 2 </label><br>
+
+
+                        <!-- end of column -->
+                    </div>
+
+
+
+
+                    <div class="col-md-10" style="background: white;">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <p class="h3 pt-3">Featured Jobs</p>
+                                </div>
+
+                                <div class="col-md-6" style="
+                                    margin-top: 22px;">
+
+                                    <select id="dropdownbtn" class="mt-3 mb-2">
+                                        <option value="0">Job work</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+
+                                    <select id="dropdownbtn" class="mt-3 mb-2 ">
+                                        <option value="0">Sort By salary</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+
+                                    <select id="dropdownbtn" class="mt-5 mb-2">
+                                        <option value="0">Recent</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <!-- cards start -->
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+
+                                                </div>
+
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+
+
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6" style="
+                                    margin-top: -25px;
+                                ">
+                                <div class="card  pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6" style="
+                                    margin-top: -25px;
+                                ">
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="h3 pb-5" style="
+                                    /* margin-bottom: 20px; */
+                                ">Best Jobs</p>
+                                </div>
+
+                                <div class="row">
+
+
+                                    <div class="col-md-6" style="
+                                    margin-top: -25px;
+                                ">
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 " style="
+                                    margin-top: -25px;
+                                ">
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body "> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-md-6" style="
+                                    margin-top: -25px;
+                                ">
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body pb-4"> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 " style="
+                                    margin-top: -25px;
+                                ">
+                                        <div class="card pb-4">
+                                            <!-- <div class="card-body pb-4"> -->
+                                                <div class="d-flex" style="margin-top: 10px;">
+                                                    <i class="fa fa-shopping-bag ml-3"
+                                                        style="font-size: 50px;color: grey;"></i>
+                                                    <h6 class="card-subtitle mt-2 ml-4"> Recruiting Cordinater
+                                                        <br><span class="text-muted" style="font-size: 10px;">Creative
+                                                            HR
+                                                            Solutin Pvt Ltd.</span>
+                                                    </h6>
+                                                </div>
+                                                <span class="heart">
+                                                    <i class="heart fa fa-heart-o"></i>
+                                                </span>
+
+                                                <div>
+
+                                                    <button class="button1">Full time</button>
+                                                    <button class="button2">Urgent</button>
+
+                                                </div>
+
+
+                                                <div>
+                                                    <i class="fa fa-shopping-bag mb-4"
+                                                        style="font-size:14px; color: grey;margin-top: 18px; margin-left: 48px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>
+                                                        Catalyst</i>
+
+                                                    <i class="fa fa-map-marker"
+                                                        style="font-size:14px; color: grey;margin-right: 10px;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>Karachi</i>
+
+                                                    <i class="fa fa-clock-o"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>11
+                                                        hours
+                                                        ago</i>
+
+
+                                                    <i class="fa fa-money"
+                                                        style="font-size:14px;color: grey;margin-left: 10px;"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span>35k
+                                                        - 45k</i>
+
+
+                                                </div>
+
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+        </section>
+
+
+        <section id="email-subscription">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="h3">Get New Jobs Notification!</p>
+                        <p>Subscribe and get all related jobs notification</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="" id="email" placeholder="Enter Your Email">
+                        <button type="button" id="subscribe-btn">Subscribe</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- <section>
+
+      
+            <div class="price-range-block">
+            
+                <div class="sliderText"><h2>Price Range Slider with jQuery</h2></div>
+            
+                <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+            
+                <div>
+                  <input type="number" min=0 max="9999" oninput="validity.valid||(value='1000');" id="min_price" class="price-range-field" />
+                  <input type="number" min=0 max="10000" oninput="validity.valid||(value='8000');" id="max_price" class="price-range-field" />
+                </div>
+            
+                <button class="price-range-search" id="price-range-submit">Search</button>
+            
+                <div id="searchResults" class="search-results-block"></div>
+            
+            </div>
+            
+                </section>
+             -->
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="navbar-brand font-weight-bold" href="#" style="
+                    font-size: 21pt;font-style: italic;color: #1967d3;
+                ">SORRTED</a> <br>
+                    <br>
+                    <p style="font-weight: 600;color: #b3b9bd;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolore corrupti fugiat ea deserunt consequuntur. Fuga debitis tempora sequi, ipsam
+                        perspiciatis iusto, ipsum voluptatibus dolorum incidunt ratione voluptates corporis, labore
+                        culpa.</p>
+                    <br>
+                    <P class="text-muted" style="font-weight: 600;">CALL US 344-755-111</P>
+                    <br>
+                    <a href="#" class="fa fa-facebook text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-instagram text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-twitter text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-google text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-pinterest text-muted"></a>
+
+
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Useful Links</p>
+                    <br>
+                    <br>
+                    <ul style="color: #b3b9bd;">
+                        <li class=" pb-3" style="font-weight: 600;">Home</li>
+
+                        <li class=" pb-3" style="font-weight: 600;">Terms of Service</li>
+                        <li class=" pb-3" style="font-weight: 600;">FAQ Page</li>
+                        <li class=" pb-3" style="font-weight: 600;">Post A Job</li>
+                        <li class=" pb-3" style="font-weight: 600;">Contact us</li>
+                        <li class=" pb-3" style="font-weight: 600;">Vacancy portal</li>
+                        <li class=" pb-3" style="font-weight: 600;">How it Works</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Lates Jobs Posts</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Contact Us</p>
+                    <br>
+                    <br>
+                    <p>Karachi address shah re faisal
+                        <br>
+                        +92313233232322
+                        <br>
+                        Info
+                        2website.com
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="text-muted text-center mt-5">CopyRights @ Website.com 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        //    $(".nav a").on("click", function(){
+        //    $(".nav").find(".active").removeClass("active");
+        //    $(this).parent().addClass("active");
+        // });
+
+
+
+        $(".nav .nav-link").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        $(".heart.fa").click(function () {
+            $(this).toggleClass("fa-heart fa-heart-o");
+        });
+
+
+        $(".js-example-tags").select2({
+            tags: true
+        });
+
+
+
+
+        $(".js-example-tokenizer").select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        }); $('select').select2({
+            createTag: function (params) {
+                var term = $.trim(params.term);
+
+                if (term === '') {
+                    return null;
+                }
+
+                return {
+                    id: term,
+                    text: term,
+                    newTag: true // add additional parameters
+                }
+            }
+        });
+
+
+
+
+        $(document).ready(function () {
+            $(".form-wrapper .button").click(function () {
+                var button = $(this);
+                var currentSection = button.parents(".section");
+                var currentSectionIndex = currentSection.index();
+                var headerSection = $('.steps li').eq(currentSectionIndex);
+                currentSection.removeClass("is-active").next().addClass("is-active");
+                headerSection.removeClass("is-active").next().addClass("is-active");
+
+                $(".form-wrapper").submit(function (e) {
+                    e.preventDefault();
+                });
+
+                if (currentSectionIndex === 3) {
+                    $(document).find(".form-wrapper .section").first().addClass("is-active");
+                    $(document).find(".steps li").first().addClass("is-active");
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="jQuery.UI.js" type="text/javascript"></script>
+    <script src="price_range_script.js" type="text/javascript"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/slim.min.js"></script>
+</body>
+
+</html>

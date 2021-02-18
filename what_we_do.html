@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsome470.css">
+    <link rel="stylesheet" href="assets/css/fontawsome.css">
+    
+    <link rel="stylesheet" href="assets/css/4_5_2_bootstrap.css">
+    <script src="assets/js/3_5_1_jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/4_5_2_bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/441bootstrap.css">
+    <script src="assets/js/341slimmin.js"></script>
+    <script src="assets/js/116popper.min.js"></script>
+    <script src="assets/js/441bootstrap.js"></script>
+    <script src="assets/js/211jquery.js"></script>
+    <script src="assets/js/select402.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="jQuery.UI.css" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/what_we_do.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white;
+                        background: blue;
+                        position: relative;
+                        left: 32px;
+                        bottom: 12px;
+                        /* height: 10px;">&times;</span>
+                    </button>
+                    <div class="wrapper">
+
+                        <form class="form-wrapper">
+                            <fieldset class="section is-active">
+                                <h5 class="font-weight-bold mb-4">Login for job post</h5>
+                                <label for="name" style="float: left;">Email Address</label>
+                                <input class="form-control" type="email" name="name" placeholder="Name"> <br>
+                                <label for="name" style="float: left;">Password</label>
+                                <input class="form-control" type="password" name="password" placeholder="******">
+
+                                <button id="log-reg" type="button">Login Now</button>
+                                <button id="log-reg" type="button" class="button">Registeration Now</button>
+                                <p>or</p>
+
+                                <button style="width: 100%;" type="button"
+                                    class="btn btn-outline-danger fa fa-google">Signup Via Gmail account</button>
+
+                                <!-- <div>Next</div> -->
+
+                            </fieldset>
+
+
+                            <fieldset class="section">
+                                <h5 class="mb-5">Create a Acount for job post</h5>
+                                <input class="form-control" type="name" name="name" style="
+                                margin-bottom: 10px;
+                            " placeholder="Name">
+                                <input class="form-control" type="email" class="mt-2" name="email" placeholder="Email">
+                                <input class="form-control" type="text" name="organization" placeholder="Organization">
+                                <select class="form-control" name="city" id="city">
+                                    <option value="0">City</option>
+
+                                    <option value="karachi">karachi</option>
+                                    <option value="lahore">lahore</option>
+                                    <option value="islamabad">islamabad</option>
+                                    <option value="sukkur">sukkur</option>
+                                </select>
+                                <button id="log-reg" type="button" class="button">Login Now</button>
+                                <button id="log-reg" type="button">Registeration Now</button>
+                                <!-- <input class="submit button" type="submit" value="Sign Up"> -->
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+     
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <a class="navbar-brand font-weight-bold" href="#" style="
+            font-size: 21pt;font-style: italic;color: #1967d3;
+        ">SORRTED</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="who_are_we.html">Who Are We</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="what_we_do.html">What We Offer <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Recruiter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="assets/job-seeker/backup/dist/job-seeker.html">Job
+                            Seeker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">What Vacancy Portal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="pdf/broucher.pdf" style="font-size: 11pt; color: #1967d3;font-family: revert;"
+                        class="fa fa-file-pdf-o mt-2 font-weight-bold" data-toggle="modal"
+                        data-target="#exampleModal">Register Yourself
+                        today</a>
+                </span>
+                <span>
+                    <button type="button" class="ml-2 mr-2" id="login-button">Login/Register</button>
+                </span>
+
+
+                <span class="navbar-text">
+                    <button type="button" class="pl-4 pr-4" id="login-button"
+                    style="  background-image: linear-gradient(#06038c, #05035c);
+                    ;color: white;">+ Post Job</button>
+                </span>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <main>
+        <section id="section-of-registered">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style=" color: #1967d3;
+                  font-size: 25pt;
+                  font-weight: 500;text-align: center; padding-top: 30px;">What We Do</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- card one -->
+            <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                        <img class="image-left mt-5" src="assets/image/pic_of_with_card.png"  alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="main-card">
+                            <div class="">
+                           
+                                <img  style="float: right;" class="mr-5" src="assets/image/manwithgi.png"  alt="">
+                                <p class="heading-of-right-cards">Enabling companies to hire the BEST candidates 
+                                    in minimal time! 
+                                </p>
+                            </div>
+
+                            <p class="paragraph-of-right-cards mr-5">One stop solution to meet all your company's recruitment needs. We guarantee the best recommended candidates to you. How? By analyzing candidates’ technical and soft-skills, rating them on globally followed best assessments, preparing customized dashboards and recommending profiles that fit your company needs. YES, we do the hard work, while you just go through the final product! Some features that make us different from the market
+                            </p>
+                            <button class="btn-of-right-card mb-4 mt-3" type="button">Click</button>
+                            </div>
+
+                    </div>
+                  </div>
+            </div>
+
+            <section id="how_we_can_help_you">
+                <div class="container">
+                    <p style=" color: #1967d3;
+                    font-size: 25pt;
+                    font-weight: 500;text-align: center;">How We Can Help You</p>
+    
+                    <p class="how_we_can_help_you_para">Gone are the days to forward resumes to clients by headhunters without screening and wasting millions of rupees on hiring recruitment resources just to source candidates! By forwarding just the resumes, we believe the cli  ent's work becomes even more taxing, and therefore we introduce the FIRST-EVER dashboard based recommended profile portal as per your customized needs. You just mention your query, and let us do the rest! Cool right? Let’s link up (hyperlink it so they click and reach the email section) to solve your company recruitment needs right away!
+                    </p>
+                </div>
+            </section>
+    
+
+<!-- card two -->
+
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="main-card-1">
+                    <div class="">
+                        <img class="mt-4" style="float: left;
+                        /* position: absolute; */
+                        position: relative;
+                        bottom: 55px;
+                        left: 30px;
+                    " style="float: left;" src="assets/image/magnifier.png"  alt="">
+                        
+                        <p class="heading-of-right-cards text-right">Finding placements for JOB SEEKERS – FOR FREE!
+  
+                        </p>
+                    </div>
+  
+                    <p class="paragraph-of-right-cards ml-5 text-right">Vacancy Portal – Did Have been unsuccessfully finding the right opportunity for the longest time?! Don't worry anymore. For job-seekers, our elaborate database ensures that NO ONE misses out on any opportunity! Just leave your profile with us, and let us get back to you once you match with any company's request. Did you imagine having to not spend days/weeks/months searching for the right opportunity? Well now you don't have to!!  
+                    </p>
+                    <button class="btn-of-right-card mb-4 mt-3" type="button" style="float: right;">learn more</button>
+                    </div>
+  
+            </div>
+
+
+          <div class="col-md-5">
+              <img class="image-left mt-5" src="assets/image/pic_of_with_card_2.png"  alt="">
+          </div>
+
+       
+        </div>
+  </div>
+
+
+
+
+  <!-- card three -->
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-5">
+                      <img class="image-left mt-5" src="assets/image/pic_of_with_card_2.png"  alt="">
+                  </div>
+                  <div class="col-md-7">
+                      <div class="main-card"  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border: none;">
+                          <div class="">
+                         
+                              <img class="mr-5" style="float: right;" src="assets/image/manwithgi.png"  alt="">
+                              <p class="heading-of-right-cards">Vacancy Portal
+                            </p>
+                          </div>
+
+                          <p class="paragraph-of-right-cards mr-5">Vacancy Portal – Did you ever feel you have to go through multiple websites to find the right opportunity? Only to find there are not enough tabs to fit your job needs? Just put your job needs in our portal, whether it’s AM or Manager, Karachi or Muzaffarabad, local or MNC, HR or Finance, just put your requisite details and find the right opportunity to apply for!! 
+                          </p>
+                          <button class="btn-of-right-card mb-5 mt-3" type="button">learn more</button>
+                          </div>
+
+                  </div>
+                </div>
+          </div>
+
+
+          <!-- card 4 -->
+          <div class="container mt-5">
+            <div class="row">
+    
+                <div class="col-md-7">
+                    <div class="main-card-1">
+                        <div class="">
+                            <img class="mt-4" style="float: left;
+                            /* position: absolute; */
+                            position: relative;
+                            bottom: 55px;
+                            left: 30px;
+                        " style="float: left;" src="assets/image//fourthleficon.png"  alt="">
+                            
+                            <p class="heading-of-right-cards text-right">Resume Writing Services
+                            </p>
+                        </div>
+      
+                        <p class="paragraph-of-right-cards mb-0 ml-3 text-right">It takes 4 seconds on average for a recruiter to decide whether to proceed or discard your resume! Absurd right? Resume is your first impression, and as they say, first impression is the LAST impression! Have you realized how many jobs you have potentially missed just because your resume was discarded?  
+                            Don’t jeopardize your chances of getting your ideal job and seek professional services of resume writing from experienced HR professionals in our team who guarantee an ATS compliant world-class resume. Click here to get a free feedback and further details
+                            
+                        </p>
+                        <button class="btn-of-right-card mb-4 mt-3" type="button" style="float: right;">learn more</button>
+                        </div>
+      
+                </div>
+    
+    
+              <div class="col-md-5">
+                  <img class="image-left mt-5" src="assets/image/pic_of_with_card_3.png"  alt="">
+              </div>
+    
+           
+            </div>
+      </div>
+    
+
+
+
+            <!-- card 5 -->
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-5">
+                      <img class="image-left mt-5" src="assets/image/pic_of_with_card_2.png"  alt="">
+                  </div>
+                  <div class="col-md-7">
+                      <div class="main-card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border: none;">
+                          <div class="">
+                          
+                              <img class="mr-5" style="float: right;" src="assets/image/manwithgi.png"  alt="">
+                              <p class="heading-of-right-cards">Career Coaching Services
+                            </p>
+                          </div>
+
+                          <p class="paragraph-of-right-cards mr-5">Stuck with your job and don’t know if its the right one? Feel like changing departments but don’t know how to? Can’t seem to work well with teams and want to learn how to? Not getting along with your manager? Wanting to be a high performer? Need help in delivering your stretch targets efficiently? Want to build your soft/technical skills? It is always said that an advice can change your life, because a wrong one can destroy your time and career.  Click here to let experienced and renowned HR professionals coach you on how to get a winning mindset and how to succeed in your career. 
+
+                          </p>
+                          <button class="btn-of-right-card mb-2" type="button">Learn more</button>
+                          </div>
+
+                  </div>
+                </div>
+          </div>
+
+
+<!-- card 6 -->
+
+     <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="main-card-1">
+                    <div class="">
+                        <img class="mt-4" style="float: left;
+                        /* position: absolute; */
+                        position: relative;
+                        bottom: 55px;
+                        left: 30px;
+                    " style="float: left;" src="assets/image//fourthleficon.png"  alt="">
+                        
+                        <p class="heading-of-right-cards text-right">LinkedIn Branding
+                        </p>
+                    </div>
+  
+                    <p class="paragraph-of-right-cards mb-0 ml-3 text-right">It takes 4 seconds on average for a recruiter to decide whether to proceed or discard your resume! Absurd right? Resume is your first impression, and as they say, first impression is the LAST impression! Have you realized how many jobs you have potentially missed just because your resume was discarded?  
+                        Don’t jeopardize your chances of getting your ideal job and seek professional services of resume writing from experienced HR professionals in our team who guarantee an ATS compliant world-class resume. Click here to get a free feedback and further details
+                        
+                        
+                    </p>
+                    <button class="btn-of-right-card mb-4 mt-3" type="button" style="float: right;">learn more</button>
+                    </div>
+  
+            </div>
+
+
+          <div class="col-md-5">
+              <img class="image-left mt-5" src="assets/image/pic_of_with_card_2.png"  alt="">
+          </div>
+
+       
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+
+            <!-- card 7 -->
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-5">
+                      <img class="image-left mt-5" src="assets/image/pic_of_with_card_3.png"  alt="">
+                  </div>
+                  <div class="col-md-7">
+                      <div class="main-card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border: none;">
+                          <div class="">
+                           
+                              <img class="mr-5" style="float: right;" src="assets/image/manwithgi.png"  alt="">
+                              <p class="heading-of-right-cards">Interview preparation
+                            </p>
+                          </div>
+
+                          <p class="paragraph-of-right-cards mr-5">Get trained by renowned HR professionals to give the best interviews! Most candidates with great CV value fail to impress in the interviews and hence are rejected. There is nothing wrong with them, its just that they are never coached on how to give the ideal interviews! Opt for Interview coaching and learn the art of giving the ideal introductions, of answering behavioral questions and of convincing recruiters on why they should hire YOU!
+
+                          </p>
+                          <button class="btn-of-right-card mb-4 mt-3" type="button">learn more</button>
+                          </div>
+
+                  </div>
+                </div>
+          </div>
+
+
+<!-- card 8 -->
+
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-7">
+            <div class="main-card-1">
+                <div class="">
+                    <img class="mt-4" style="float: left;
+                    /* position: absolute; */
+                    position: relative;
+                    bottom: 55px;
+                    left: 30px;
+                " style="float: left;" src="assets/image//fourthleficon.png"  alt="">
+                    
+                    <p class="heading-of-right-cards text-right">Entry test preparation 
+                    </p>
+                </div>
+
+                <p class="paragraph-of-right-cards mb-0 ml-3 text-right">Yu feel you are technically sound but fail to clear the tests? Have you missed your dream opportunity because you couldn’t clear the entrance test? Well, we ensure that you learn to ace the entrance exams to any companies with elaborate practice on actual company tests that will enable you to clear the first round easily! Don’t miss out on your dream opportunity and let us help you in joining your next ideal company
+                    
+                    
+                </p>
+                <button class="btn-of-right-card mb-4 mt-3" type="button" style="float: right;">learn more</button>
+                </div>
+
+        </div>
+
+
+      <div class="col-md-5">
+          <img class="image-left mt-5" src="assets/image/pic_of_with_card.png"  alt="">
+      </div>
+
+   
+    </div>
+</div>
+
+
+
+
+
+
+        <section id="email-subscription">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="h3">Get New Jobs Notification!</p>
+                        <p>Subscribe and get all related jobs notification</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="" id="email" placeholder="Enter Your Email">
+                        <button type="button" id="subscribe-btn">Subscribe</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="navbar-brand font-weight-bold" href="#" style="
+                    font-size: 21pt;font-style: italic;color: #1967d3;
+                ">SORRTED</a> <br>
+                    <br>
+                    <p style="font-weight: 600;color: #b3b9bd;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolore corrupti fugiat ea deserunt consequuntur. Fuga debitis tempora sequi, ipsam
+                        perspiciatis iusto, ipsum voluptatibus dolorum incidunt ratione voluptates corporis, labore
+                        culpa.</p>
+                    <br>
+                    <P class="text-muted" style="font-weight: 600;">CALL US 344-755-111</P>
+                    <br>
+                    <a href="#" class="fa fa-facebook text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-instagram text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-twitter text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-google text-muted"></a>
+                    <span>&nbsp</span>
+                    <a href="#" class="fa fa-pinterest text-muted"></a>
+
+
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Useful Links</p>
+                    <br>
+                    <br>
+                    <ul style="color: #b3b9bd;">
+                        <li class=" pb-3" style="font-weight: 600;">Home</li>
+
+                        <li class=" pb-3" style="font-weight: 600;">Terms of Service</li>
+                        <li class=" pb-3" style="font-weight: 600;">FAQ Page</li>
+                        <li class=" pb-3" style="font-weight: 600;">Post A Job</li>
+                        <li class=" pb-3" style="font-weight: 600;">Contact us</li>
+                        <li class=" pb-3" style="font-weight: 600;">Vacancy portal</li>
+                        <li class=" pb-3" style="font-weight: 600;">How it Works</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Lates Jobs Posts</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="h4">Contact Us</p>
+                    <br>
+                    <br>
+                    <p>Karachi address shah re faisal
+                        <br>
+                        +92313233232322
+                        <br>
+                        Info
+                        2website.com
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="text-muted text-center mt-5">CopyRights @ Website.com 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+        // counter start
+
+        (function ($) {
+            $.fn.countTo = function (options) {
+                options = options || {};
+
+                return $(this).each(function () {
+                    // set options for current element
+                    var settings = $.extend({}, $.fn.countTo.defaults, {
+                        from: $(this).data('from'),
+                        to: $(this).data('to'),
+                        speed: $(this).data('speed'),
+                        refreshInterval: $(this).data('refresh-interval'),
+                        decimals: $(this).data('decimals')
+                    }, options);
+
+                    // how many times to update the value, and how much to increment the value on each update
+                    var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                        increment = (settings.to - settings.from) / loops;
+
+                    // references & variables that will change with each update
+                    var self = this,
+                        $self = $(this),
+                        loopCount = 0,
+                        value = settings.from,
+                        data = $self.data('countTo') || {};
+
+                    $self.data('countTo', data);
+
+                    // if an existing interval can be found, clear it first
+                    if (data.interval) {
+                        clearInterval(data.interval);
+                    }
+                    data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                    // initialize the element with the starting value
+                    render(value);
+
+                    function updateTimer() {
+                        value += increment;
+                        loopCount++;
+
+                        render(value);
+
+                        if (typeof (settings.onUpdate) == 'function') {
+                            settings.onUpdate.call(self, value);
+                        }
+
+                        if (loopCount >= loops) {
+                            // remove the interval
+                            $self.removeData('countTo');
+                            clearInterval(data.interval);
+                            value = settings.to;
+
+                            if (typeof (settings.onComplete) == 'function') {
+                                settings.onComplete.call(self, value);
+                            }
+                        }
+                    }
+
+                    function render(value) {
+                        var formattedValue = settings.formatter.call(self, value, settings);
+                        $self.html(formattedValue);
+                    }
+                });
+            };
+
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
+                to: 0,                 // the number the element should end at
+                speed: 1000,           // how long it should take to count between the target numbers
+                refreshInterval: 100,  // how often the element should be updated
+                decimals: 0,           // the number of decimal places to show
+                formatter: formatter,  // handler for formatting the value before rendering
+                onUpdate: null,        // callback method for every time the element is updated
+                onComplete: null       // callback method for when the element finishes updating
+            };
+
+            function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+            }
+        }(jQuery));
+
+        jQuery(function ($) {
+            // custom formatting example
+            $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
+
+            // start all the timers
+            $('.timer').each(count);
+
+            function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+            }
+        });
+
+        // counter end
+
+
+
+
+
+
+        // navbar start
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        // navbar end
+
+        $(".heart.fa").click(function () {
+            $(this).toggleClass("fa-heart fa-heart-o");
+        });
+
+
+        $(".js-example-tags").select2({
+            tags: true
+        });
+
+
+
+
+        $(".js-example-tokenizer").select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        }); $('select').select2({
+            createTag: function (params) {
+                var term = $.trim(params.term);
+
+                if (term === '') {
+                    return null;
+                }
+
+                return {
+                    id: term,
+                    text: term,
+                    newTag: true // add additional parameters
+                }
+            }
+        });
+
+
+
+
+        $(document).ready(function () {
+            $(".form-wrapper .button").click(function () {
+                var button = $(this);
+                var currentSection = button.parents(".section");
+                var currentSectionIndex = currentSection.index();
+                var headerSection = $('.steps li').eq(currentSectionIndex);
+                currentSection.removeClass("is-active").next().addClass("is-active");
+                headerSection.removeClass("is-active").next().addClass("is-active");
+
+                $(".form-wrapper").submit(function (e) {
+                    e.preventDefault();
+                });
+
+                if (currentSectionIndex === 3) {
+                    $(document).find(".form-wrapper .section").first().addClass("is-active");
+                    $(document).find(".steps li").first().addClass("is-active");
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="jQuery.UI.js" type="text/javascript"></script>
+    <script src="price_range_script.js" type="text/javascript"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/slim.min.js"></script>
+</body>
+
+</html>
